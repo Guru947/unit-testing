@@ -1,0 +1,17 @@
+import unittest
+
+class TestMultiplyNumbers(unittest.TestCase):
+    def test_empty_list(self):
+        self.assertEqual(multiply_numbers([]), 1)
+
+    def test_single_number(self):
+        self.assertEqual(multiply_numbers([5]), 5)
+
+    def test_two_numbers(self):
+        self.assertEqual(multiply_numbers([2, 3]), 6)
+
+    def test_multiple_numbers(self):
+        self.assertEqual(multiply_numbers([1, 2, 3, 4, 5]), 120)
+
+if __name__ == '__main__':
+    unittest.main()
